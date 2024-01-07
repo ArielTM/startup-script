@@ -10,6 +10,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 sed 's/ZSH_THEME=.*/ZSH_THEME="agnoster"/g' .zshrc > .tmpzshrc && mv .tmpzshrc .zshrc
 sed 's/plugins=(.*)/plugins=(git command-not-found docker tmux zsh-autosuggestions)\nZSH_TMUX_AUTOSTART=true\nexport EDITOR=vim/g' .zshrc > .tmpzshrc && mv .tmpzshrc .zshrc
 
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sh ~/.vim_runtime/install_awesome_vimrc.sh
+
 echo "Resarting in 5..."
 sleep 5
 sudo shutdown -r now
