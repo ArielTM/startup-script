@@ -12,6 +12,7 @@ sed 's/ZSH_THEME=.*/ZSH_THEME="agnoster"/g' .zshrc > .tmpzshrc && mv .tmpzshrc .
 sed 's/plugins=(.*)/plugins=(git command-not-found docker tmux zsh-autosuggestions zsh-syntax-highlighting)\nZSH_TMUX_AUTOSTART=true\nexport EDITOR=vim/g' .zshrc > .tmpzshrc && mv .tmpzshrc .zshrc
 
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sh ~/.vim_runtime/install_awesome_vimrc.sh
+echo "set number" >> ~/.vim_runtime/my_configs.vim
 
 echo "Resarting in 5..."
 sleep 5
