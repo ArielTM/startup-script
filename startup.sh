@@ -14,6 +14,8 @@ sed 's/plugins=(.*)/plugins=(git command-not-found docker tmux zsh-autosuggestio
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sh ~/.vim_runtime/install_awesome_vimrc.sh
 echo "set number" >> ~/.vim_runtime/my_configs.vim
 
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 echo "Resarting in 5..."
 sleep 5
 sudo shutdown -r now
