@@ -16,6 +16,8 @@ echo "set number" >> ~/.vim_runtime/my_configs.vim
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
 sudo chsh -s "$(which zsh)" "$USER"
 
 echo "Resarting in 5..."
